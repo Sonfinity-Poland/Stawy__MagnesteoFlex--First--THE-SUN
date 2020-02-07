@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "TheSun";
+  src: url(/assets/fonts/TheSun-Regular.woff2);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "TheSun";
+  src: url(/assets/fonts/TheSun-Medium.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "TheSun";
+  src: url(/assets/fonts/TheSun-Bold.woff2);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "TheSun";
+  src: url(/assets/fonts/TheSun-HeavyNarrow.woff2);
+  font-weight: normal;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3f6f7;
+  font-size: 15px;
+  font-family: TheSun, sans-serif;
+  font-weight: 400;
+  color: #222526;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #222526;
+}
+
+.container {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header .top_bar {
+  background-color: #222526;
+  padding: 7px 0;
+  text-align: center;
+}
+
+header .top_bar span {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
