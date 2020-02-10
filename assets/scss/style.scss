@@ -18,7 +18,7 @@
 }
 
 @font-face {
-    font-family: "TheSun";
+    font-family: "TheSunHeavy";
     src: url(/assets/fonts/TheSun-HeavyNarrow.woff2);
     font-weight: normal;
 }
@@ -79,14 +79,21 @@ h1 {
 }
 
 h2 {
-    font-size: 2.4rem;
-    line-height: 2.8rem;
+    font-size: 24px;
+    line-height: 28px;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 
 a {
     text-decoration: none;
     color: $black;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 300;
 }
 
 ul {
@@ -148,6 +155,10 @@ header {
         @include respond-to('sm') {
             background-color: $black;
 
+            .container {
+                padding: 0;
+            }
+
             .logo_wrap {
                 max-width: 280px;
                 height: 120px;
@@ -175,6 +186,10 @@ header {
 
         @include respond-to('sm') {
             padding: 0;
+
+            .container {
+                padding: 0;
+            }
         }
 
         .user_panel {
@@ -397,6 +412,9 @@ header {
 }
 
 main {
+    @include respond-to('sm') {
+        margin-top: 25px;
+    }
 
     .container {
         background-color: #fff;
@@ -407,23 +425,177 @@ main {
             width: 100%;
             padding: 15px 0;
 
+            @include respond-to ('md') {
+                width: 66.66666%;
+                padding: 15px 10px;
+            }
+
             .header_article {
                 margin-bottom: 15px;
             }
 
             .author {
                 margin-bottom: 15px;
-                
+
                 .time {
                     color: #6e7070;
                     font-size: 12px;
                     font-weight: 300;
                 }
             }
+
+            .social {
+                border-top: 1px solid $gray;
+                border-bottom: 1px solid $gray;
+                padding: 5px 0;
+                display: flex;
+                justify-content: flex-start;
+                margin-bottom: 15px;
+
+                .share_items {
+                    position: relative;
+                    display: flex;
+                    justify-content: flex-start;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: -7px;
+                        background-color: $gray;
+                        height: 35px;
+                        width: 1px;
+                    }
+
+                    .twitter {
+                        width: 36px;
+                        height: 36px;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 4px;
+                        border-radius: 4px;
+                        background-color: #00aeef;
+                        position: relative;
+                        margin-right: 5px;
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            background-image: url(../img/twitter.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            height: 24px;
+                            width: 24px;
+                        }
+                    }
+
+                    .facebook {
+                        width: 36px;
+                        height: 36px;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 4px;
+                        border-radius: 4px;
+                        background-color: #1877f1;
+                        position: relative;
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            background-image: url(../img/facebook.png);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            height: 24px;
+                            width: 24px;
+                        }
+                    }
+                }
+
+                .comment_items {
+                    .comment {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        background-color: #007aff;
+                        height: 36px;
+                        padding: 4px 8px;
+                        border-radius: 4px;
+                        margin-left: 15px;
+                        position: relative;
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            background-image: url(../img/chat.png);
+                            width: 24px;
+                            height: 24px;
+                        }
+
+                        span {
+                            color: #fff;
+                            margin-left: 30px;
+                        }
+                    }
+                }
+            }
+
+            .article_wrapper {
+
+                .intro {
+                    font-weight: 700;
+                }
+
+                p {
+                    margin-bottom: 15px;
+                    word-break: break-word;
+                }
+
+                figure {
+                    display: block;
+                    padding: 0;
+                    margin: 3px 0 16px;
+                    width: auto;
+                    border-bottom: 1px solid #adafb0;
+
+                    figcaption {
+                        padding: 8px 0;
+
+                        .figcaption_title {
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 22px;
+                        }
+
+                        .figcaption_credit {
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: 22px;
+                            display: inline-block;
+                            color: #6e7070;
+                        }
+                    }
+                }
+            }
         }
 
         aside {
             display: none;
+
+            @include respond-to('md') {
+                width: 33.3333%;
+                display: block;
+                padding: 15px 10px;
+            }
+
+            .aside_text {
+                border-left: 1px solid $border;
+                border-right: 1px solid $border;
+                border-bottom: 1px solid $border;
+                padding: 12px 8px 8px;
+            }
         }
     }
 }
