@@ -1009,6 +1009,7 @@ main .container #topics .row .topic {
   font-size: 16px;
   line-height: normal;
   cursor: pointer;
+  outline: none;
 }
 
 main .container #topics .row .topic:hover {
