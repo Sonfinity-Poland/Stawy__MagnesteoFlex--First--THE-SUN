@@ -783,6 +783,7 @@ main .container #comments .add_comments_wrapper .add_comment .row .cancel {
   min-width: 54px;
   cursor: pointer;
   border-radius: 4px;
+  outline: none;
 }
 
 main .container #comments .add_comments_wrapper .add_comment .row .cancel:hover {
@@ -803,6 +804,7 @@ main .container #comments .add_comments_wrapper .add_comment .row .sign_in {
   cursor: pointer;
   border-radius: 4px;
   margin-left: 10px;
+  outline: none;
 }
 
 main .container #comments .add_comments_wrapper .add_comment .row .sign_in:hover {
@@ -831,7 +833,6 @@ main .container #comments .comment_wrapper .comment .comment_top {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10px;
   position: relative;
 }
 
@@ -888,6 +889,17 @@ main .container #comments .comment_wrapper .comment .comment_middle {
 main .container #comments .comment_wrapper .comment .comment_middle p {
   font-size: 16px;
   line-height: 24px;
+  margin-bottom: 10px;
+}
+
+main .container #comments .comment_wrapper .comment .comment_middle .product_img_wrapper {
+  max-width: 180px;
+}
+
+@media (min-width: 675px) {
+  main .container #comments .comment_wrapper .comment .comment_middle .product_img_wrapper {
+    max-width: 250px;
+  }
 }
 
 main .container #comments .comment_wrapper .comment .comment_bottom {
