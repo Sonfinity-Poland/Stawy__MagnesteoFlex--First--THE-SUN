@@ -193,6 +193,7 @@ header .middle_bar .user_panel {
   header .middle_bar .user_panel span {
     font-size: 17px;
     font-weight: 500;
+    cursor: pointer;
   }
 }
 
@@ -214,6 +215,7 @@ header .middle_bar .user_panel .row .avatar {
   background-size: cover;
   background-position: center;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 header .middle_bar .user_panel .row .box {
@@ -247,6 +249,7 @@ header .middle_bar .user_panel .row .search {
   background-size: cover;
   background-position: center;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 header .middle_bar .hamburger {
@@ -319,7 +322,7 @@ header .middle_bar nav #navbar li {
   header .middle_bar nav #navbar li:hover {
     color: #4085cb;
   }
-  header .middle_bar nav #navbar li:nth-child(5) {
+  header .middle_bar nav #navbar li:nth-child(4) {
     color: #4085cb;
   }
   header .middle_bar nav #navbar li:last-child::before {
@@ -407,7 +410,7 @@ header .bottom_bar .row ul li {
   header .bottom_bar .row ul li:last-child::after {
     content: unset;
   }
-  header .bottom_bar .row ul li:nth-child(3)::before {
+  header .bottom_bar .row ul li:nth-child(2)::before {
     position: absolute;
     content: '';
     background-color: #24588c;

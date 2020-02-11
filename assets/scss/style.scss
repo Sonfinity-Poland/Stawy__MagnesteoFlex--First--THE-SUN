@@ -205,6 +205,7 @@ header {
                 span {
                     font-size: 17px;
                     font-weight: 500;
+                    cursor: pointer;
                 }
             }
             
@@ -221,6 +222,7 @@ header {
                     background-size: cover;
                     background-position: center;
                     margin-left: 10px;
+                    cursor: pointer;
                 }
 
                 .box {
@@ -248,6 +250,7 @@ header {
                     background-size: cover;
                     background-position: center;
                     margin-left: 10px;
+                    cursor: pointer;
                 }
             }
         }
@@ -315,7 +318,7 @@ header {
                             color: $blue;
                         }
 
-                        &:nth-child(5) {
+                        &:nth-child(4) {
                             color: $blue;
                         }
 
@@ -404,7 +407,7 @@ header {
                             }
                         }
 
-                        &:nth-child(3) {
+                        &:nth-child(2) {
                             &::before {
                                 position: absolute;
                                 content: '';
