@@ -1,25 +1,25 @@
 @charset "UTF-8";
 @font-face {
   font-family: "TheSun";
-  src: url(/assets/fonts/TheSun-Regular.woff2);
+  src: url(assets/fonts/TheSun-Regular.woff2);
   font-weight: 300;
 }
 
 @font-face {
   font-family: "TheSun";
-  src: url(/assets/fonts/TheSun-Medium.woff2);
+  src: url(assets/fonts/TheSun-Medium.woff2);
   font-weight: 500;
 }
 
 @font-face {
   font-family: "TheSun";
-  src: url(/assets/fonts/TheSun-Bold.woff2);
+  src: url(assets/fonts/TheSun-Bold.woff2);
   font-weight: bold;
 }
 
 @font-face {
   font-family: "TheSunHeavy";
-  src: url(/assets/fonts/TheSun-HeavyNarrow.woff2);
+  src: url(assets/fonts/TheSun-HeavyNarrow.woff2);
   font-weight: normal;
 }
 
