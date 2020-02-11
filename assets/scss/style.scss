@@ -430,6 +430,107 @@ header {
     }
 }
 
+.social {
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    padding: 5px 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+
+    .share_items {
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -7px;
+            background-color: $gray;
+            height: 35px;
+            width: 1px;
+        }
+
+        .twitter {
+            width: 36px;
+            height: 36px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            border-radius: 4px;
+            background-color: #00aeef;
+            position: relative;
+            margin-right: 5px;
+            cursor: pointer;
+
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url(../img/twitter.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 24px;
+                width: 24px;
+            }
+        }
+
+        .facebook {
+            width: 36px;
+            height: 36px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4px;
+            border-radius: 4px;
+            background-color: #1877f1;
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url(../img/facebook.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+
+    .comment_items {
+        .comment {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #007aff;
+            height: 36px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-left: 15px;
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+                position: absolute;
+                content: '';
+                background-image: url(../img/chat.png);
+                width: 24px;
+                height: 24px;
+            }
+
+            span {
+                color: #fff;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
 main {
     @include respond-to('sm') {
         margin-top: 25px;
@@ -460,104 +561,6 @@ main {
                     color: #6e7070;
                     font-size: 12px;
                     font-weight: 300;
-                }
-            }
-
-            .social {
-                border-top: 1px solid $gray;
-                border-bottom: 1px solid $gray;
-                padding: 5px 0;
-                display: flex;
-                justify-content: flex-start;
-                margin-bottom: 15px;
-
-                .share_items {
-                    position: relative;
-                    display: flex;
-                    justify-content: flex-start;
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        right: -7px;
-                        background-color: $gray;
-                        height: 35px;
-                        width: 1px;
-                    }
-
-                    .twitter {
-                        width: 36px;
-                        height: 36px;
-                        display: inline-flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 4px;
-                        border-radius: 4px;
-                        background-color: #00aeef;
-                        position: relative;
-                        margin-right: 5px;
-
-                        &::before {
-                            position: absolute;
-                            content: '';
-                            background-image: url(../img/twitter.png);
-                            background-size: cover;
-                            background-repeat: no-repeat;
-                            height: 24px;
-                            width: 24px;
-                        }
-                    }
-
-                    .facebook {
-                        width: 36px;
-                        height: 36px;
-                        display: inline-flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 4px;
-                        border-radius: 4px;
-                        background-color: #1877f1;
-                        position: relative;
-
-                        &::before {
-                            position: absolute;
-                            content: '';
-                            background-image: url(../img/facebook.png);
-                            background-size: cover;
-                            background-repeat: no-repeat;
-                            height: 24px;
-                            width: 24px;
-                        }
-                    }
-                }
-
-                .comment_items {
-                    .comment {
-                        display: flex;
-                        justify-content: flex-start;
-                        align-items: center;
-                        background-color: #007aff;
-                        height: 36px;
-                        padding: 4px 8px;
-                        border-radius: 4px;
-                        margin-left: 15px;
-                        position: relative;
-
-                        &::before {
-                            position: absolute;
-                            content: '';
-                            background-image: url(../img/chat.png);
-                            width: 24px;
-                            height: 24px;
-                        }
-
-                        span {
-                            color: #fff;
-                            margin-left: 30px;
-                        }
-                    }
                 }
             }
 
@@ -711,7 +714,7 @@ main {
                         box-shadow: inset 0 3px 3px 0 rgba(0,0,0,.05);
                         cursor: text;
                         outline: none;
-                        padding: 15px 15px 40px;
+                        padding: 15px 15px 50px;
 
                         span {
                             color: #a8abae;
@@ -737,6 +740,11 @@ main {
                             min-width: 54px;
                             cursor: pointer;
                             border-radius: 4px;
+
+                            &:hover {
+                                color: #fff;
+                                background-color: #007aff;;
+                            }
                         }
 
                         .sign_in {
@@ -752,6 +760,11 @@ main {
                             cursor: pointer;
                             border-radius: 4px;
                             margin-left: 10px;
+
+                            &:hover {
+                                color: #007aff;;
+                                background-color: #fff;
+                            }
                         }
                     }
                 }
@@ -771,6 +784,19 @@ main {
                         justify-content: flex-start;
                         align-items: center;
                         margin-bottom: 10px;
+                        position: relative;
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            background-image: url(../img/flag.png);
+                            background-repeat: no-repeat;
+                            width: 16px;
+                            height: 16px;
+                            background-size: 80%;
+                            top: 12px;
+                            right: 0;
+                        }
 
                         .avatar {
                             background-color: $gray;
@@ -823,6 +849,7 @@ main {
                             line-height: 24px;
                             font-weight: 600;
                             color: #80808c;
+                            cursor: pointer;
                         }
 
                         .like_wrapper {
@@ -835,6 +862,7 @@ main {
                                 border-radius: 4px;
                                 opacity: .5;
                                 position: relative;
+                                cursor: pointer;
     
                                 &::before {
                                     position: absolute;
@@ -861,6 +889,7 @@ main {
                                 opacity: .5;
                                 position: relative;
                                 margin-left: 10px;
+                                cursor: pointer;
     
                                 &::before {
                                     position: absolute;
@@ -882,6 +911,136 @@ main {
                         }
                     }
                 }
+            }
+        }
+
+        #topics {
+            .row {
+                justify-content: flex-start;
+                flex-wrap: wrap;
+
+                .topic {
+                    padding: 8px 12px;
+                    margin-right: 8px;
+                    margin-bottom: 8px;
+                    border: 1px solid #6e7070;
+                    background-color: #fff;
+                    font-weight: bold;
+                    font-family: TheSun, sans-serif;
+                    color: $black;
+                    font-size: 16px;
+                    line-height: normal;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $black;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    text-align: left;
+    background-color: $black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    .row {
+        flex-direction: column;
+
+        @include respond-to('sm') {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .footer_title {
+            color: #fff;
+            font-weight: 500;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            margin: 0;
+            border-bottom: 1px solid #80808c;
+            padding: 0 0 13px;
+
+            @include respond-to('sm') {
+                color: #80808c;
+            }
+        }
+
+        .footer_social {
+            width: 100%;
+            margin-bottom: 15px;
+
+            @include respond-to('sm') {
+                width: 31%;
+            }
+
+            .social {
+                border: 0;
+                padding-top: 15px;
+
+                .share_items {
+                    .twitter {
+                        margin-right: 15px;
+                    }
+
+                    &::before {
+                        content: none;
+                    }
+                }
+            }
+        }
+
+        .footer_services {
+            width: 100%;
+            display: block;
+            margin-bottom: 15px;
+
+            @include respond-to('sm') {
+                width: 64%;
+            }
+
+            .footer_menu {
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                padding-top: 15px;
+
+                li {
+                    font-family: TheSun, sans-serif;
+                    color: #fff;
+                    display: block;
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin-right: 15px;
+                    margin-bottom: 15px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: rgb(173, 16, 16);
+                    }
+                }
+            }
+        }
+    }
+
+    .copyrights {
+        border-top: 1px solid #80808c;
+        padding-top: 15px;
+
+        p {
+            font-size: 12px;
+            color: #d2d6d7;
+            font-weight: 300;
+            line-height: 20px;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }
