@@ -685,7 +685,7 @@ main {
                         justify-content: space-between;
                         align-items: center;
 
-                        select {
+                        select, option {
                             font-family: 'TheSun';
                             font-weight: 600;
                             min-width: 160px;
@@ -693,6 +693,7 @@ main {
                             color: $black;
                             line-height: 24px;
                             padding: 3px 10px;
+                            background-color: #fff;
                             border: 1px solid #e6eaeb;
                             outline: none;
                         }
