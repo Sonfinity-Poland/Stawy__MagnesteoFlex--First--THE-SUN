@@ -646,6 +646,13 @@ main {
                     }
                 }
             }
+
+            .special {
+                position: sticky;
+                top: 0;
+                left: 0;
+                border: 1px solid $gray;
+            }
         }
 
         #comments {
