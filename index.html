@@ -28,7 +28,7 @@
                         </div>
                         <div class="row">
                             <div class="box">
-                                <span class="triangle">Polska Edycja</span>
+                                <span class="triangle">Polska</span>
                             </div>
                             <div class="box">
                                 <span>Szukaj</span>
@@ -83,8 +83,8 @@
                 </div>
                 <div class="social">
                     <div class="share_items">
-                        <div class="twitter"></div>
-                        <div class="facebook"></div>
+                        <a href="https://twitter.com" target="_blank"><div class="twitter"></div></a>
+                        <a href="https://facebook.com" target="_blank"><div class="facebook"></div></a>
                     </div>
                     <div class="comment_items">
                         <div class="comment">
@@ -208,351 +208,21 @@
                                 </div>
                             </div>
                             <div class="add_comment">
-                                <div class="textarea">
-                                    <span>Dodaj komentarz ...</span>
+                                <div class="input_wrapper">
+                                    <input id="signature" class="nick" type="text" placeholder="Wpisz nick">
                                 </div>
+                                <textarea class="textarea" id="comment" cols="100%" rows="10" placeholder="Dodaj tekst"></textarea>
                                 <div class="row">
-                                    <button class="cancel">Wyślij</button>
+                                    <button class="cancel" id="addCommentBtn">Wyślij</button>
                                     <button class="sign_in">Dodaj zdjęcie</button>
                                 </div>
                             </div>
                         </div>
                         <!-- COMMENTS -->
+
                         <div class="comment_wrapper">
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">J</div>
-                                    <span class="name">Jasiu007</span>
-                                    <span class="date">1 godzina</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Wystarczyło kilka dni, by przestało strzykać w kolanach. Czuję się, jakby ktoś ‘’naoliwił’’ moje stawy! Dziękuję!
-                                    </p>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">H</div>
-                                    <span class="name">Halyna</span>
-                                    <span class="date">1 godzina</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Wreszcie kucam, klękam, bawię się z wnukami. Nie odczuwam żadnego dyskomfortu. Czuję się jakbym miała 20 lat. 
-                                    </p>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">T</div>
-                                    <span class="name">Tadziu</span>
-                                    <span class="date">2 godziny</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Paczka właśnie dotarła. Czekam na pierwsze efekty, trzymajcie kciuki. 
-                                    </p>
-                                    <div class="product_img_wrapper">
-                                        <img src="assets/img/comment01.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">B</div>
-                                    <span class="name">Beata Jabłońska</span>
-                                    <span class="date">2 godziny</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Nie sądziłam, że takie małe plastry mogą działać takie cuda. Polecam każdemu, kto ma problem ze stawami.
-                                    </p>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">Z</div>
-                                    <span class="name">Zielona Matylda</span>
-                                    <span class="date">3 godziny</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Te plastry naprawdę są niewidoczne na skórze, sami zobaczcie! 
-                                    </p>
-                                    <div class="product_img_wrapper">
-                                        <img src="assets/img/comment02.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">L</div>
-                                    <span class="name">Leszek Mirosławski</span>
-                                    <span class="date">3 godziny</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Te plastry to prawdziwa rewolucja. Na początku sceptycznie do nich podchodziłem, jednak postanowiłem zaryzykować i zamówiłem jedno opakowanie. Z niecierpliwością czekam na przesyłkę. 
-                                    </p>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">M</div>
-                                    <span class="name">Mała Ania</span>
-                                    <span class="date">4 godziny</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Już opakowanie plastrów przyciąga wyglądem, patrzcie! A zawartość? Jest jeszcze lepsza.
-                                    </p>
-                                    <div class="product_img_wrapper">
-                                        <img src="assets/img/comment03.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">M</div>
-                                    <span class="name">Malwina Lichomska</span>
-                                    <span class="date">3 godziny</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Przez problemy z kręgosłupem nie byłam w stanie normalnie funkcjonować. Dzięki tym plastrom biomagnetycznym czuję się o niebo lepiej. Po prostu rewelacja!
-                                    </p>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">O</div>
-                                    <span class="name">Oleńka70</span>
-                                    <span class="date">6 godzin</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Te plastry uratowały mi życie. Wreszcie uwolniłam się od strzykania, trzeszczenia i piszczenia, szczególnie w kolanach. 
-                                    </p>
-                                    <div class="product_img_wrapper">
-                                        <img src="assets/img/comment04.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">M</div>
-                                    <span class="name">Marian</span>
-                                    <span class="date">6 godzin</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Kręgosłup już mi nie dokucza, ten produkt jest jakby luksusowy. Polecam wszystkim!
-                                    </p>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">J</div>
-                                    <span class="name">Jakub Ślepiec</span>
-                                    <span class="date">12 godzin</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Te plastry to gwarancja sukcesu. Jestem pewien, że pomogą każdemu tak jak mi. 
-                                    </p>
-                                    <div class="product_img_wrapper">
-                                        <img src="assets/img/comment05.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">B</div>
-                                    <span class="name">Baba Jadzia</span>
-                                    <span class="date">13 godzin</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        W krzyżu mnie łupało, korzonki bolały, normalnie chodzić nie mogłam… No nic nie pomagało, te proszki przeciwbólowe to mi wątrobę zniszczyły. Na szczęście bratanek przywiózł tę kurację zza granicy. Dzięki plastrom z magnesami mogę normalnie funkcjonować.
-                                    </p>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">B</div>
-                                    <span class="name">Janusz Duda</span>
-                                    <span class="date">16 godzin</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Całe życie byłem księgowym. Praca przy biurku doprowadziła do tego, że moje łokcie były w totalnej rozsypce. Miałem problemy z wyprostowaniem rąk, no masakra jakaś… Dopiero te plastry mi pomogły. Ból minął jak ręką odjął.
-                                    </p>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">G</div>
-                                    <span class="name">Grażka W.</span>
-                                    <span class="date">wczoraj</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Od kilku lat męczyłam się z bólem nadgarstków. Nawet kubka w ręku nie mogłam utrzymać. Codziennie łykałam po kilka tabletek przeciwbólowych, które doprowadziły do wrzodów żołądka. Te plastry poleciła mi sąsiadka. No od razu mi pomogły. Nie czułam już bólu, nic mi z rąk nie leciało. Zdecydowanie polecam!
-                                    </p>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">B</div>
-                                    <span class="name">Beti</span>
-                                    <span class="date">wczoraj</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        Od lat cierpiałam na RZS. Lekarze nie dawali mi żadnych szans, groził mi wózek inwalidzki. Nie mogłam do tego dopuścić, zaczęłam szukać innego rozwiązania. Tak trafiłam na Magnesteo Flex. Te maleńkie plastry potrafią zdziałać wielkie cuda!
-                                    </p>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="comment">
-                                <div class="comment_top">
-                                    <div class="avatar">S</div>
-                                    <span class="name">Seba Typowski</span>
-                                    <span class="date">wczoraj</span>
-                                </div>
-                                <div class="comment_middle">
-                                    <p>
-                                        To jest mega! W końcu mogę normalnie chodzić! Zero efektów ubocznych! Kupujcie póki jest w promocji! 
-                                    </p>
-                                </div>
-                                <div class="comment_bottom">
-                                    <span class="reply">Odpowiedz</span>
-                                    <div class="like_wrapper">
-                                        <div class="like"></div>
-                                        <div class="unlike"></div>
-                                    </div>
-                                </div>
-                            </div>
+                            <div id="cmt-user"></div>
+                            <div id="cmt-render"></div>
                         </div>
                     </div>
                 </section>
@@ -681,5 +351,6 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/comments.js"></script>
 </body>
 </html>

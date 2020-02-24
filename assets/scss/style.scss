@@ -727,6 +727,20 @@ main {
                 .add_comment {
                     margin-bottom: 20px;
 
+                    .input_wrapper {
+                        margin-bottom: 20px;
+
+                        .nick {
+                            width: 100%;
+                            border: 1px solid #d4d6d7;
+                            border-radius: 4px;
+                            outline: none;
+                            cursor: text;
+                            padding: 15px;
+                            box-shadow: inset 0 3px 3px 0 rgba(0, 0, 0, 0.05);
+                        }
+                    }
+
                     .textarea {
                         max-width: 100%;
                         border: 1px solid #d4d6d7;
@@ -750,7 +764,7 @@ main {
                         padding: 5px 0;
 
                         .cancel {
-                            background: none;
+                            background: #fff;
                             border: 1px solid #007aff;
                             color: #007aff;
                             padding: 0 20px;
@@ -765,14 +779,14 @@ main {
 
                             &:hover {
                                 color: #fff;
-                                background-color: #007aff;;
+                                background-color: #007aff;
                             }
                         }
 
                         .sign_in {
-                            background: #007aff;
+                            background: #fff;
                             border: 1px solid #007aff;
-                            color: #fff;
+                            color: #007aff;
                             padding: 0 20px;
                             font-weight: 700;
                             font-size: 16px;
@@ -785,8 +799,8 @@ main {
                             outline: none;
 
                             &:hover {
-                                color: #007aff;;
-                                background-color: #fff;
+                                color: #fff;
+                                background-color: #007aff;
                             }
                         }
                     }
