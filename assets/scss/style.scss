@@ -534,6 +534,16 @@ header {
     }
 }
 
+.main-link2 {
+    color: #4085cb;
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+.main-link2:hover {
+        color: #275686;
+    }
+
 main {
     @include respond-to('sm') {
         margin-top: 25px;
