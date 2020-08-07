@@ -468,60 +468,27 @@ header .bottom_bar .row ul li {
 .social .share_items .twitter {
   width: 36px;
   height: 36px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 4px;
   border-radius: 4px;
   background-color: #00aeef;
-  position: relative;
   margin-right: 5px;
   cursor: pointer;
-}
-
-.social .share_items .twitter::before {
-  position: absolute;
-  content: '';
   background-image: url(../img/twitter.png);
-  background-size: cover;
   background-repeat: no-repeat;
-  height: 24px;
-  width: 24px;
+  background-position: center;
 }
 
 .social .share_items .facebook {
   width: 36px;
   height: 36px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 4px;
   border-radius: 4px;
   background-color: #1877f1;
   position: relative;
   cursor: pointer;
-}
-
-.social .share_items .facebook::before {
-  position: absolute;
-  content: '';
-  background-image: url(../img/facebook.png);
-  background-size: cover;
   background-repeat: no-repeat;
-  height: 24px;
-  width: 24px;
+  background-position: center;
+  background-image: url(../img/facebook.png);
 }
 
 .social .comment_items .comment {
@@ -891,8 +858,9 @@ main .container #comments .comment_wrapper .comment .comment_top .avatar {
   height: 32px;
   border: 1px solid #c4cacb;
   border-radius: 50%;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

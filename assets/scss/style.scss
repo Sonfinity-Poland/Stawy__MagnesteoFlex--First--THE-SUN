@@ -460,48 +460,27 @@ header {
         .twitter {
             width: 36px;
             height: 36px;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
             padding: 4px;
             border-radius: 4px;
             background-color: #00aeef;
-            position: relative;
             margin-right: 5px;
             cursor: pointer;
-
-            &::before {
-                position: absolute;
-                content: '';
-                background-image: url(../img/twitter.png);
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 24px;
-                width: 24px;
-            }
+            background-image: url(../img/twitter.png);
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .facebook {
             width: 36px;
             height: 36px;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
             padding: 4px;
             border-radius: 4px;
             background-color: #1877f1;
             position: relative;
             cursor: pointer;
-
-            &::before {
-                position: absolute;
-                content: '';
-                background-image: url(../img/facebook.png);
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 24px;
-                width: 24px;
-            }
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(../img/facebook.png);
         }
     }
 
@@ -840,7 +819,7 @@ main {
                             height: 32px;
                             border: 1px solid #c4cacb;
                             border-radius: 50%;
-                            display: grid;
+                            display: flex;
                             justify-content: center;
                             align-items: center;
                             margin-right: 20px;
